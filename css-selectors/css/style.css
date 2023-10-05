@@ -1,0 +1,24 @@
+h1 {
+  font-family: 'Helvetica';
+  color: white;
+  background-color: rebeccapurple;
+  padding: .5em;
+}
+
+h2 {
+  color: rebeccapurple;
+}
+
+p {
+  font-size: 18px;
+}
+
+img {
+  max-height: 150px;
+  border-radius: 20px;
+}
+
+/* elements with class="about-section" */
+.about-section {
+  background-color: #eee;
+}
