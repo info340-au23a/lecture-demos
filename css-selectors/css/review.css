@@ -2,14 +2,14 @@
 /* Q1 */
 /* .alert.success {
   color: yellow;
-} */
-/* .alert .success {
+}
+.alert .success {
   color: yellow;
-} */
-/* .alert, .success {
+}
+.alert, .success {
   color: yellow
-} */
-/* .alert--.success {
+}
+.alert--.success {
   color: yellow
 } */
 
@@ -36,8 +36,11 @@
 /* .first.second { color: green}; */
 /* div > p { color: green; } */
 /* div .second, #first { color: green; } */
-/* p:last-child { color: green; }  */
+/* p:last-child { color: green; } 
 
+p:nth-child(2) {
+  color: blue;
+} */
 
 
 
@@ -66,9 +69,9 @@
 
 
 /* Q3 */
-/* p { color: grey; }
-#red { color: red; }
+p { color: grey; }
 .blue { color: blue; }
 #red .blue { color: magenta; }
+#red { color: red; }
 .green p { color: lightgreen; }
-div.green p.blue { color: cyan; } */
+div.green p.blue { color: cyan; }

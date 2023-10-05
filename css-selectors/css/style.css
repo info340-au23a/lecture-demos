@@ -22,3 +22,35 @@ img {
 .about-section {
   background-color: #eee;
 }
+
+.about-section h2 {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.about-section > img {
+  border-radius: 50%;
+}
+
+/* .alert, h1, #navbar {
+  background-color: yellow;
+} */
+
+
+
+/* p.alert {
+  background-color: lightgreen;
+} */
+
+.about-section img:hover {
+  max-height: 300px;
+} 
+
+.link-section a:focus, .link-section a:hover {
+  font-weight: bold;
+}
+
+li:nth-child(2n) {
+  background-color: lightblue;
+  width: 50%;
+}
