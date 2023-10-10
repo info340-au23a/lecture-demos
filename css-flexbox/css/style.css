@@ -1,9 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
 /* general styling */
 h1, h2, h3 {
     font-family: 'Helvetica';
 }
 
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    background-color: lightblue;
+    font-size: 30px;
+    padding: 20px;
+    /* border: 10px dashed black; */
+    /* border-width: 4px;
+    border-style: dashed;
+    border-color: black; */
+    /* height: 100px; */
+    width: 50%;
+    /* margin-left: auto; */
+    /* text-align: right; */
+}
+
+header a {
+    width: 50%;
+    height: 100px;
+    background-color: lightgrey;
+    display: none;
+}
+
+
 h2 {
+
     color: rebeccapurple;
 }
 
@@ -14,21 +46,59 @@ nav {
     background-color: #4b2e83;
 }
 
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    display: inline-block;
+    width: 150px;
+}
+
 nav a {
     color: white;
+}
+
+main {
+    display: flex;
+}
+
+.about-section {
+    order: 2;
+    flex-basis: 30%;
+    padding: 0 1em;
+    margin-left: 1em;
 }
 
 
 /* about section */
 .about-section {
     background-color: #f8f8f8;
+    /* font-size: 2em; */
 }
 
+.about-section h2 {
+    font-size: 2rem;
+}
+
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
 
 /* course cards */
 .courses .card {
     border: 1px solid black;
+    padding: 16px;
+    flex-grow: 1;
 }
+
+.courses .card.info201 {
+    flex-grow: 3;
+}
+
 
 .courses img {
     max-width: 150px;
