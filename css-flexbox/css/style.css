@@ -1,0 +1,40 @@
+/* general styling */
+h1, h2, h3 {
+    font-family: 'Helvetica';
+}
+
+h2 {
+    color: rebeccapurple;
+}
+
+
+/* nav bar */
+nav {
+    color: white;
+    background-color: #4b2e83;
+}
+
+nav a {
+    color: white;
+}
+
+
+/* about section */
+.about-section {
+    background-color: #f8f8f8;
+}
+
+
+/* course cards */
+.courses .card {
+    border: 1px solid black;
+}
+
+.courses img {
+    max-width: 150px;
+}
+
+/* other */
+footer {
+    font-size: smaller;
+}
