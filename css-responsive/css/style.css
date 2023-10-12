@@ -2,9 +2,13 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: beige;
+}
+
 /* general styling */
 h1, h2, h3 {
-  font-family: 'Helvetica';
+  font-family: 'Montserrat', 'Arial', sans-serif;
 }
 
 h2 {
@@ -20,11 +24,13 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav li {
   display: inline-block;
   width: 150px;
+  padding: .5em;
 }
 
 nav a {
@@ -37,30 +43,41 @@ nav a {
 }
 
 main {
-  display: flex;
+  /* display: flex; */
 }
 
 .about {
   order: 2;
   flex-basis: 30%;
   padding: 0 1em;
-  margin-left: 2em;
+  /* margin-left: 2em; */
+}
+
+.about img {
+  display: none;
 }
 
 /* course cards */
 /* the "flexbox pool" */
-.card-deck {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
 .courses .card {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   border: 1px solid black;
   padding: .5em;
-  margin: .5em;
+  display: flex;
+  flex-direction: column;
+  /* margin: 5px; */
+  align-items: center;
 }
+
+.courses .card div {
+  flex-grow: 1;
+}
+
+.courses .card h3 {
+  text-align: center;
+}
+
 
 .courses img {
   max-width: 150px;
@@ -70,3 +87,48 @@ main {
 footer {
   font-size: smaller;
 }
+
+@media (min-width: 768px) {
+  body {
+    background-color: lightblue;
+  }
+
+  .courses .card {
+    background-color: white;
+  }
+
+  main {
+    display: flex;
+  }
+
+  .about {
+    margin-left: 2em;
+  }
+
+  .about img {
+    display: inline;
+  }
+
+  .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .courses .card {
+    flex-basis: 50%;
+  }
+  
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: goldenrod;
+  }
+
+  .courses .card {
+    flex-basis: 33%;
+  }
+ 
+}
+
