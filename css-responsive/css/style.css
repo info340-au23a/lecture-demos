@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+/* general styling */
+h1, h2, h3 {
+  font-family: 'Helvetica';
+}
+
+h2 {
+  color: rebeccapurple;
+}
+
+/* nav bar */
+nav {
+  color: white;
+  background-color: #4b2e83;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  display: inline-block;
+  width: 150px;
+}
+
+nav a {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  color: white;
+}
+
+.about {
+  background-color: #f8f8f8;
+}
+
+main {
+  display: flex;
+}
+
+.about {
+  order: 2;
+  flex-basis: 30%;
+  padding: 0 1em;
+  margin-left: 2em;
+}
+
+/* course cards */
+/* the "flexbox pool" */
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.courses .card {
+  flex-grow: 1;
+  border: 1px solid black;
+  padding: .5em;
+  margin: .5em;
+}
+
+.courses img {
+  max-width: 150px;
+}
+
+/* other */
+footer {
+  font-size: smaller;
+}
