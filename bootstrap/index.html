@@ -8,10 +8,14 @@
   <meta name="author" content="Joel Ross">
   <title>Demo: Joel's Home Page (Bootstrap)</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="container">
   <nav>
     <ul>
       <li><a href="https://ischool.uw.edu">iSchool</a></li>
@@ -22,11 +26,34 @@
     </ul>
   </nav>
 
+  <nav class="navbar navbar-expand-sm bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Hidden brand</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
   <header>
-    <h1>Joel Ross</h1>
+    <h1 class="text-white p-sm-1 p-md-3 p-lg-5 py-5 mb-3">Joel Ross</h1>
     <p>University of Washington iSchool</p>
-    <p>
-      <a href="http://getbootstrap.com/">Built with Bootstrap</a>
+    <p class="d-none d-lg-block">
+      <a class="btn btn-custom" href="http://getbootstrap.com/">Built with Bootstrap</a>
     </p>
 
   </header>
@@ -45,30 +72,36 @@
     <section class="courses">
       <h2>Courses I Teach</h2>
       <p>
-        <button>Hide All</button>
+        <button 
+          class="btn btn-outline-primary"
+          data-bs-toggle="collapse"
+          data-bs-target="#course-cards"
+          >
+          
+          Show All</button>
       </p>
-      <div>
-        <div>
+      <div id="course-cards" class="row collapse">
+        <div class="col-12 col-md-6 col-lg-4">
           <img src="img/chrome-logo-150w.png" alt="chrome browser logo">
           <h3>INFO 340: Client Side Development</h3>
         </div>
 
-        <div>
+        <div class="col-12 col-md-6 col-lg-4">
           <img src="img/rlogo-150w.png" alt="r language logo">
           <h3>INFO 201: Foundational Skills for Data Science </h3>
         </div>
 
-        <div>
+        <div class="col-12 col-md-6 col-lg-4">
           <img src="img/rockefeller-avatar-150w.png" alt="lego model of rockefeller center">
           <h3>INFO 443: Software Architecture</h3>
         </div>
 
-        <div>
+        <div class="col-4">
           <img src="img/android-icon-150w.png" alt="android droid icon">
           <h3>INFO 448: Android Development</h3>
         </div>
 
-        <div>
+        <div class="col">
           <img src="img/python-logo-150w.png" alt="python language logo">
           <h3>LIS 511: Introduction to Programming</h3>
         </div>
@@ -78,9 +111,9 @@
     <section>
       <h2>Contact Form</h2>
       <form>
-        <div>
-          <label for="name-input">Name:</label> 
-          <input id="name-input" type="text" name="username">
+        <div class="input-group w-50">
+          <label class="input-group-text" for="name-input">Name:</label> 
+          <input id="name-input" class="form-control" type="text" name="username">
         </div>
         <div>
           <label for="email-input">Email:</label>

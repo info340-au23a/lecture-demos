@@ -1,0 +1,16 @@
+/* body {
+  font-family: 'Papyrus';
+} */
+
+h1 {
+  background-color: rebeccapurple;
+}
+
+.btn-custom {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.row div {
+  border: 1px solid black;
+}
