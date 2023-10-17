@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" >
+  <!-- remember to set the viewport! -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Joel Ross">
+  <title>Demo: Joel's Home Page (Bootstrap)</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li><a href="https://ischool.uw.edu">iSchool</a></li>
+      <li><a href="#">Teaching</a></li>
+      <li><a href="#">Research</a></li>
+      <li><a href="https://info340.github.io/">Client Side Web Development</a></li>
+      <li><a href="https://www.safaribooksonline.com/library/view/-/9780135159071/?ar">Programming Skills for Data Science</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Joel Ross</h1>
+    <p>University of Washington iSchool</p>
+    <p>
+      <a href="http://getbootstrap.com/">Built with Bootstrap</a>
+    </p>
+
+  </header>
+
+  <main>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>Hello! My name is Joel Ross, and I'm an Associate Teaching Professor at the University of Washington Information School. I teaches courses in web development, mobile application development, software architecture, and introductory programming.</p>
+
+      <p>
+        <img src="img/joelross-200x.jpg" alt="smiling Joel Ross">
+      </p>  
+    </section>
+
+    <section class="courses">
+      <h2>Courses I Teach</h2>
+      <p>
+        <button>Hide All</button>
+      </p>
+      <div>
+        <div>
+          <img src="img/chrome-logo-150w.png" alt="chrome browser logo">
+          <h3>INFO 340: Client Side Development</h3>
+        </div>
+
+        <div>
+          <img src="img/rlogo-150w.png" alt="r language logo">
+          <h3>INFO 201: Foundational Skills for Data Science </h3>
+        </div>
+
+        <div>
+          <img src="img/rockefeller-avatar-150w.png" alt="lego model of rockefeller center">
+          <h3>INFO 443: Software Architecture</h3>
+        </div>
+
+        <div>
+          <img src="img/android-icon-150w.png" alt="android droid icon">
+          <h3>INFO 448: Android Development</h3>
+        </div>
+
+        <div>
+          <img src="img/python-logo-150w.png" alt="python language logo">
+          <h3>LIS 511: Introduction to Programming</h3>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact Form</h2>
+      <form>
+        <div>
+          <label for="name-input">Name:</label> 
+          <input id="name-input" type="text" name="username">
+        </div>
+        <div>
+          <label for="email-input">Email:</label>
+          <input id="email-input" type="email" name="useremail">
+        </div>
+        <div>
+          <label for="comment-text">Comment:</label> 
+          <textarea id="comment-text" name="comment"></textarea>
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+        </div>      
+      </form>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; Joel Ross & INFO 340</p>
+  </footer>
+
+</body>
+</html>
