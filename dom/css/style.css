@@ -1,0 +1,7 @@
+.anim {
+	transition: transform 2s;
+}
+
+.scale-out {
+	transform: scale(0); 
+}
