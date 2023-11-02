@@ -129,4 +129,11 @@ formElem.addEventListener('submit', function(event){
 })
 
 
+//review demo
 
+myElement.classList.add('bg-dark');
+myElement.classList.add('info34-style');
+
+myElement.style.margin = '3em';
+
+const elements = document.querySelectorAll("#first, p")
