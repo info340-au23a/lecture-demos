@@ -1,8 +1,19 @@
 import React from 'react';
 
+import { PageHeader } from './Header.js';
+import { CourseList } from './CourseCards.js';
+
 export default function App(props) {
 
+  const greetee = "World";
+  // const myObj = {name: "Joel"};
+
   return (
-    <h1>Hello React!</h1>
+    <div>
+      <PageHeader />
+      <main className="container">
+        <CourseList />
+      </main>
+    </div>
   )
 }
