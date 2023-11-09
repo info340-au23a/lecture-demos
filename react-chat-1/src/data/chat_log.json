@@ -1,0 +1,50 @@
+[
+  {
+      "userId": "penguin",
+      "userName": "Penguin",
+      "userImg": "/img/Penguin.png",
+      "text": "It's so cold out today!",
+      "timestamp": 1320161040000,
+      "channel": "general"
+  },
+  {
+      "uid": "parrot",
+      "userName": "Parrot",
+      "userImg": "/img/Parrot.png",
+      "text": "It's warm over here",
+      "timestamp": 1320161760000,
+      "channel": "general"
+  },
+  {
+      "userId": "eagle",
+      "userName": "Eagle",
+      "userImg": "/img/Eagle.png",
+      "text": "Lucky duck",
+      "timestamp": 1320162060000,
+      "channel": "general"
+  },
+  {
+      "userId": "parrot",
+      "userName": "Parrot",
+      "userImg": "/img/Parrot.png",
+      "text": "I'm not a duck!",
+      "timestamp": 1320162120000,
+      "channel": "general"
+  },
+  {
+      "userId": "zebra",
+      "userName": "Zebra",
+      "userImg": "/img/Zebra.png",
+      "text": "Wassup! It's me y'all",
+      "timestamp": 1320224280000,
+      "channel": "random"
+  },
+  {
+      "userId": "owl",
+      "userName": "Owl",
+      "userImg": "/img/Owl.png",
+      "text": "Who?",
+      "timestamp": 1320224640000,
+      "channel": "random"
+  }
+]
