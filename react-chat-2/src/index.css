@@ -1,0 +1,58 @@
+/** general **/
+/* hack the sizes */
+html, body, #root, #root>div {
+  height: 100%;
+}
+
+.material-icons {
+  position: relative;
+  top: 4px;
+}
+
+
+/** Channel Nav **/
+.channel-nav ul {
+  list-style-type: none;
+}
+
+.channel-nav a {
+  color: white;
+}
+
+
+/** Messages **/
+.scrollable-pane {
+  /* will enable it to scroll content */
+  flex: 1 1 auto;
+  height: 0;
+  overflow: auto;
+}
+
+.message img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message .user-name {
+  font-weight: bold;
+}
+
+/* like-button */
+.like-button {
+  padding: 0;
+}
+.like-button .material-icons {
+  position:relative;
+  top:0px;
+}
+
+
+/** Compose Form **/
+textarea.form-control {
+  resize: none;
+}
