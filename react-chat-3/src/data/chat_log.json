@@ -13,7 +13,8 @@
       "userImg": "/img/Parrot.png",
       "text": "It's warm over here",
       "timestamp": 1320161760000,
-      "channel": "general"
+      "channel": "general",
+      "isLiked": true
   },
   {
       "userId": "eagle",
@@ -29,7 +30,8 @@
       "userImg": "/img/Parrot.png",
       "text": "I'm not a duck!",
       "timestamp": 1320162120000,
-      "channel": "general"
+      "channel": "general",
+      "isLiked": true
   },
   {
       "userId": "zebra",
