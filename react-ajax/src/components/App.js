@@ -9,9 +9,20 @@ const EXAMPLE_DATA = [
 
 
 function App(props) {
+  console.log("rendering app");
   const [stateData, setStateData] = useState(EXAMPLE_DATA);
   //control form
-  const [queryInput, setQueryInput] = useState('');
+  const [queryInput, setQueryInput] = useState("boot");
+
+  useEffect(() => {
+    fetch("https://api.github.com/search/repositories?q=react")
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      setStateData(data.items);
+    })
+  }, []);
 
   const handleChange = (event) => {
     setQueryInput(event.target.value);
@@ -22,10 +33,27 @@ function App(props) {
 
     //do something with form input!
 
+    //doodle
+    const URL = "https://api.github.com/search/repositories?q="+queryInput;
+
+    fetch(URL)
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        setStateData(data.items);
+      })
+
+    const response = await fetch(URL);
+    const data = await response.json();
+    console.log(data);
+    setStateData(data.items);
+
   }
 
 
   //render the data
+  console.log(stateData);
   const dataElemArray = stateData.map((repo) => {
     return <li key={repo.html_url}><a href={repo.html_url}>{repo.full_name}</a></li>
   })
@@ -36,7 +64,7 @@ function App(props) {
     <div className="container">
       <header><h1>AJAX Demo</h1></header> 
 
-      <form method="GET" action="https://api.github.com/search/repositories">
+      <form method="GET" action="https://api.github.com/search/repositories" onSubmit={handleSubmit}>
         <input type="text" className="form-control mb-2" 
           name="q"
           placeholder="Search Github for..."
