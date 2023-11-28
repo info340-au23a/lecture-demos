@@ -1,0 +1,5 @@
+[
+    { "full_name": "(example) react", "html_url": "https://github.com/facebook/react" },
+    { "full_name": "(example) react-bootstrap", "html_url": "https://github.com/react-bootstrap/react-bootstrap" },    
+    { "full_name": "(example) react-router", "html_url": "https://github.com/remix-run/react-router" }
+]
