@@ -1,0 +1,79 @@
+/* hack the sizes */
+html, body, #root, #root>div {
+  height: 100%;
+}
+
+.material-icons {
+  position: relative;
+  top: 4px;
+}
+
+/** Messages **/
+.scrollable-pane {
+  /* will enable it to scroll content */
+  flex: 1 1 auto;
+  height: 0;
+  overflow: auto;
+}
+
+.message img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.message p {
+  margin: 0;
+}
+
+.message .user-name {
+  font-weight: bold;
+}
+
+/* like-button */
+.like-button {
+  padding: 0;
+}
+.like-button .material-icons {
+  position:relative;
+  top:0px;
+}
+
+
+/** Channel Nav **/
+.channel-nav ul {
+  list-style-type: none;
+}
+
+.channel-nav a {
+  color: white;
+}
+
+/*** Header ***/
+header img {
+  width:40px;
+  border-radius: 50%;
+}
+
+header button.user-icon {
+  padding: .25rem;
+}
+
+.highlighted {
+  border: 3px solid greenyellow;
+}
+
+/* navlinks */
+.bg-primary .nav-link {
+  color: white;
+}
+
+.bg-primary .nav-pills .nav-link.active {
+  color: #0d6efd;
+  background-color: white;
+}
+
+header .nav-item {
+  display: flex;
+  align-items:center;
+}
