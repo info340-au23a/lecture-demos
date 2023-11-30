@@ -21,7 +21,7 @@ export function ComposeForm(props) {
   }
 
   return (
-    <form className="my-2">
+    <form className="compose-form my-2">
       <div className="input-group">
         <img src={currentUser.userImg} alt={currentUser.userName + " avatar"} />
         <textarea 

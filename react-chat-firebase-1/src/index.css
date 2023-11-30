@@ -77,3 +77,7 @@ header .nav-item {
   display: flex;
   align-items:center;
 }
+
+.compose-form img {
+  max-width: 70px;
+}
