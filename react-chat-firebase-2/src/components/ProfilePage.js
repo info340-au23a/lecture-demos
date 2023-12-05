@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 
+import {getStorage, ref as storageRef, uploadBytes, getDownloadURL } from 'firebase/storage';
+import {getDatabase, ref, set as firebaseSet} from 'firebase/database';
+import {getAuth, updateProfile } from 'firebase/auth'
+
 export default function ProfilePage(props) {
   //convenience
   const displayName = props.currentUser.userName;
@@ -17,8 +21,21 @@ export default function ProfilePage(props) {
     }
   }
 
-  const handleImageUpload = (event) => {
+  const handleImageUpload = async (event) => {
     console.log("Uploading", imageFile);
+
+    const storage = getStorage();
+    const imageRef = storageRef(storage, "userImages/"+props.currentUser.uid+".png")
+    
+    await uploadBytes(imageRef, imageFile)
+    const url = await getDownloadURL(imageRef)
+    console.log(url);
+    updateProfile(props.currentUser, {photoURL: url}) //update the profile
+    
+    //example
+    const userImgRef = ref(getDatabase(), "userData/"+props.currentUser.uid/+"img")
+    firebaseSet(userImgRef, {url: url, alt: "text"));
+
   }
 
   return (
